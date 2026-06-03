@@ -4,16 +4,14 @@ import lombok.*;
 
 import java.time.LocalDate;
 
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@EqualsAndHashCode
-@Getter
-@Setter
 public class Pessoa {
 
-    private String cpf;
-    private String nome;
-    private LocalDate nascimento;
+    private @NonNull String cpf;
+    private @NonNull String nome;
+    private @NonNull LocalDate nascimento;
 
 }
